@@ -2,10 +2,12 @@ package com.todocode.jpahibernate.services;
 
 import com.todocode.jpahibernate.models.Persona;
 import com.todocode.jpahibernate.repositories.PersonaRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class PersonaServiceImp implements PersonaService{
 
   private final PersonaRepository personaRepository;
